@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from OrbMiner.fun/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 21:14:59 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<meta content="Hire Miners to earn ETH" name="description">
+	<meta name="image" content="assets/img/NewOrbMiner1.png">
+    <!-- opengraph image -->
+	<meta property="og:image" content="assets/img/POWERED BY.png  ">
+	<meta property="og:title" content="BlastMining.xyz">
+  <meta property="og:type" content="website"/>
+	<meta property="og:description" content="Hire Miners to earn ETH">
+	<meta property="og:url" content="index.html">
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="index.html">
+	<meta name="twitter:title" content="BlastMining.xyz">
+	<meta name="twitter:description" content="Hire Miners to earn ETH">
+	<meta name="twitter:image" content="assets/img/NewOrbMiner1.png">
+	<!-- favicon files -->
+	<link rel="icon" type="image/png" href="assets/favicon/favicon.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="assets/favicon/favicon.svg" sizes="16x16" />	
+	<meta name="msapplication-TileColor" content="#E9B208">
+	<meta name="theme-color" content="#E9B208">
+	<title>BlastMiner | Powered By $BLAST</title>
+	<!-- bootstrap core CSS -->
+	<link href="dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+	<link href="jumbotron-narrow.css" rel="stylesheet">
+	<link href="custom.css" rel="stylesheet">
+	<link href="assets/fonts/fonts.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="modal" id="myModal">
+		<div class="modal-content">
+			<div id="modal-internal"></div>
+		</div>
+	</div>
+	<div class="container">
+    <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div></div>
+    <div class="navbar-header">
+    </div>
+
+    <div class="mobile-align">
+      <ul class="nav navbar-nav navbar-right font-weight-normal">
+          <li><a class="social-pad"><img src="#" class="social-icons" onclick="document.getElementById('lostmojo').pause();" /><span class="hide-mobile"></span></a></li>
+		  <li><a class="social-pad" href="https://twitter.com/OrbMiner" target="_blank"><img alt="telegram" class="social-icons" src="assets/img/social-icons/Twitter-Logo.png"><span class="hide-mobile">X</span></a></li>
+          <li><a class="social-pad" href="https://t.me/OrbMiner_Portal" target="_blank"><img alt="telegram" class="social-icons" src="assets/img/social-icons/telegram.svg"><span class="hide-mobile">Telegram</span></a></li>
+        <li><a class="social-pad" href="https://orb3scan.tech/address/0xED2055b7B78608553Bb34dC0eA509499aF9407E9?tab=contact_code" target="_blank"><img alt="ORB3SCAN" class="social-icons" src="assets/img/ORB3icon.png"><span class="hide-mobile">Verified Contract</span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <div>
+  <ul style="display:none;" class="nav nav-tabs nav-justified" id="myTabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" id="miners-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">BlastMiner</a></li>
+  </ul>
+  <div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade active in" role="tabpanel" id="home" aria-labelledby="miners-tab">
+      <!-- OrbMiner -->
+
+
+      <center>
+          <img alt="OrbMiner" src="assets/img/POWERED BY.png" href="index.html" width="100%" height="auto" >
+          </center>
+      <div class="jumbotron">
+  			<div class="container-fluid miners-tally-container">
+  				<div class="row">
+  					<div class="col-md-12">
+  						<h2 class="tally-text">You have <span class="numminers">0</span> Miners</h2>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="container">
+  				<div class="row">
+  					<div class="col-md-6 nopad-left nopad-lr">
+  						<div class="prod-contain-top">
+  							<img alt="Miners" class="main-img" src="assets/img/safeicon.png">
+  							<h2>Digging</h2>
+  						</div>
+  						<div class="prod-contain-bottom">
+  							<h2><span id="production">0</span></h2>
+  							<p class="pphr">feet per hour</p>
+  							<p class="mw-250"><br/>
+                  <span id="sellsforexample"></span>
+                </p>
+  						</div>
+  					</div>
+  					<div class="col-md-6 nopad-right nopad-lr">
+  						<div class="hold-contain-top">
+  							<img alt="Miners" class="main-img" src="assets/img/banklogo.png">
+  							<h2>Mined</h2>
+  						</div>
+  						<div class="hold-contain-bottom">
+  							<h2><span id="sellprice">?</span></h2>
+  							<p class="pphr">ETH in barrel</p>
+  							<p class="mw-250"><br/><span id="timeuntilfull">?</span><br>
+  							until barrel is full</p>
+  						</div>
+  					</div>
+  					</div>	
+  			</div>	
+  			
+  					<div class="col-md-6 nopad-left nopad-lr">
+  						<div class="spend-input">
+  						    <p style="color:#d90606; font-size:16px;">Enter ETH Amount & Click Hire Below</p>
+  							<input class="form-control" id="ethtospend" onchange="updateBuyPrice()" step="1" type="number" value="1"> <span class="ETH-text">ETH</span>
+  						</div><a class="btn btn-lg btn-buy" onclick="buyEggs2(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play() " role="button">Hire <span id="eggstobuy"></span> Miners</a>
+  					</div>
+  				<div class="row">
+  				    <div width="250"
+  			<p><a class="btn btn-lg btn-hatch" onclick="hatchEggs1(); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo2').play()" role="button">Hire More Miners</a></p>
+  					</div>
+  				<div width="250"></div>
+  						<p><a class="btn btn-lg btn-sell" onclick="sellEggs(displayTransactionMessage); document.getElementById('lostmojo').pause(); document.getElementById('lostmojo3').play(); document.getElementById('sellprice')" role="button">Pocket Your ETH</a></p>
+  					</div>
+				
+					<div class="container altcolor">
+					<br>
+  				<div class="row">
+  					<p><span id="contractBal">Contract Balance: ?</span></p>
+  				</div>
+                <div class="row">
+  					<p><span id="userTrx">Your Balance: ?</span></p>
+  				</div>
+  			</div>
+  	  
+  		</div>
+    </div>
+    
+		<footer class="footer">
+
+
+			<div class="row">
+				<div class="col-lg-6">
+				    <h4>Sustainability</h4>
+                    <p>Unlike it's predecessors which paid 100% daily, causing instant and massive inflation. BlastMiner pays a modest 3% daily, allowing investors to rest easy knowing that their investments have unlimited growth potential and a maximum, improbable risk of less than 3%.
+                    
+                    <h4>Verified Public Contract</h4>
+                    <p>The BlastMining contract is public, verified and can be viewed here on <a href="https://orb3scan.tech/address/0xED2055b7B78608553Bb34dC0eA509499aF9407E9?tab=contact_code" target="_blank"><u>Orb3Scan</u></a>.
+                    </p>
+                    
+                    
+				</div>
+				<div class="col-lg-6">
+				    <h4>Miner Info</h4>
+					<p>BlastMiner pays 3% daily ETH, according to the current mining efficiency rate. The mining efficiency rate rises and falls as you and other players hire miners, compound earnings and pocket ETH. </p>
+					<p>The object of the game is hiring more miners, sooner and more often than other players. This in turn earns you more ETH faster. Hiring more miners using your daily ETH earnings will 3x your miners within 30 days or less.</p>
+					
+				</div>
+                
+			<div class=""></div>
+			    <div class="col-lg-12">
+  					<center><p><span><a href="instructions.html" target="_blank"><img alt="How To Start Mining" src="assets/img/NewOrbMiner1.png" width="15%" height="auto" margin="10%"><b>------- > How To Start Mining</b></a></span></p></center>
+  				</div>
+				<div class="">
+				    <div class="col-md-12">
+				<font style="font-size:16px">
+					<center><p>Share your BlastMining referral link, our contract pays you a <b>10%</b> referral fee when anyone uses your link to hire miners: <a id="playerreflink" onclick="copyRef()">?
+					<p></p><input id="copytextthing" style="display:none;" type="text" value="Hello Worldfdgerh"></a></p></center></font>
+			</div>
+					<center><ul class="nav navbar-nav navbar-center font-weight-normal">
+          <li><a class="social-pad" href="https://t.me/OrbMiner_Portal" target="_blank"><img alt="Telegram" class="social-icons" src="assets/img/social-icons/telegram.svg"><span class="hide-mobile">Telegram</span></a></li>
+          <li><a class="social-pad" href="https://twitter.com/OrbMiner" target="_blank"><img alt="Twitter" class="social-icons" src="assets/img/social-icons/Twitter-Logo.png"><span class="hide-mobile">Twitter</span></a></li>
+        <li><a class="social-pad" href="https://orb3scan.tech/address/0xED2055b7B78608553Bb34dC0eA509499aF9407E9?tab=contact_code" target="_blank"><img alt="ORB3SCAN" class="social-icons" src="assets/img/ORB3icon.png"><span class="hide-mobile">Verified Contract</span></a></li>
+		<li><a class="social-pad" href="https://t.me/ORB3BridgeBot" target="_blank"><img alt="Bridge" class="social-icons" src="assets/img/token.png"><span class="hide-mobile">BridgeBot</span></a></li>
+		<li><a class="social-pad" href="https://t.me/OrbitPaws_Community" target="_blank"><img alt="Bridge" class="social-icons" src="assets/img/Oicon.png"><span class="hide-mobile">$OPAWS</span></a></li>
+      </ul></center>
+                    
+				</div>
+		</footer>
+	</div>
+	<!-- scripts -->
+	<script src="assets/js/ie-emulation-modes-warning.js">
+	</script>
+	<script src="assets/js/web3.min.js">
+	</script>
+	<script src="interface.js">
+	</script>
+	<script src="main.js">
+	</script>
+	<audio id="lostmojo" autoplay="autoplay" loop="loop">
+    <source src="#" type="audio/mpeg">
+</audio>
+<audio id="lostmojo2">
+    <source src="assets/sounds/miningsound.mp3" type="audio/mpeg">
+</audio>
+<audio id="lostmojo3">
+    <source src="assets/sounds/BNBcashout.mp3" type="audio/mpeg">
+</audio>
+	
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="assets/js/ie10-viewport-bug-workaround.js">
+	</script>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="../maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<script src="../ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script>
+	
+
+</body>
+
+<!-- Mirrored from BlastMiner.xyz/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 10 Sep 2021 21:15:09 GMT -->
+</html>
